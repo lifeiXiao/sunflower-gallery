@@ -1,0 +1,6 @@
+include ../cloud/_cloud.jade
+section.sky
+    - var n = 0;
+    while n < 10
+        +cloud(Math.floor(Math.random() * 20), Math.floor(Math.random() * 20))
+        -n++

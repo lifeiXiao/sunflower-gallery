@@ -1,0 +1,51 @@
+@import "../../leaf/_leaf.less";
+
+.line(@width) {
+	.line {
+		width: @width;
+		background-color: #383;
+		height: 100%;
+		margin: 0 auto;
+		border: 2px solid #9a9;
+
+	}
+}
+
+.slice() {
+	.slice{
+
+		width: 100%;
+		float: left;
+		position: relative;
+
+		& > .left,
+		& > .right {
+			width: 50%;
+			float: left;
+			position: relative;
+		}
+		& > .left {
+			& > .leaf {
+				float: right;
+				margin-right: 5px;
+			}
+		}
+		& > .right {
+			& > .leaf {
+				float:left;
+				margin-left: 5px;
+			}
+		}
+
+		.leaf(25%);
+
+		&.without {
+			height: 100px;
+		}
+
+		.line(20%);
+
+	}
+}
+
+.slice();

@@ -1,0 +1,16 @@
+include markup/_slice.jade
+include ../flower/_flower.jade
+- var months = [{pathName: 'juni', renderingName: 'Juni'}, {pathName: 'mai', renderingName: 'Mai'}, {pathName: 'april', renderingName: 'April'}, {pathName: 'maerz', renderingName: 'März'}, {pathName: 'februar', renderingName: 'Februar'}, {pathName: 'januar', renderingName:'Januar'}, {pathName: 'dezember', renderingName: 'Dezember'}, {pathName: 'november', renderingName: 'November'}]
+- var counter = 0
+section.plant.clearfix.left
+    +flower(12)
+    //+cloud(2, 2)
+    //+cloud(7, 8)
+    each month in months
+        - var position = counter%2 === 0 ? 'left' : 'right'
+        +slice(month, position)
+        - counter++
+    .slice.without
+        .left &nbsp;
+        .stem &nbsp;
+        .right &nbsp;

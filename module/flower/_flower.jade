@@ -1,0 +1,12 @@
+mixin flower(numberOfLeaves)
+    .flower
+        .center FIONA
+        - var n = 0, classes = ''
+        while n < numberOfLeaves
+            - n++
+            - var classes = 'nth' + n.toString()
+            div(class='leaf ' + classes) &nbsp;
+        .helper30 &nbsp;
+        .helper-30 &nbsp;
+        .helper60 &nbsp;
+        .helper-60 &nbsp;

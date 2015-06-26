@@ -1,0 +1,167 @@
+.flower(@flower-size){
+
+	.flower {
+		height: 0;
+		position: relative;
+		.flower-size(@flower-size);
+		.flower-inner();
+	}
+
+
+	@media all and (max-width: 1650px) {
+		.flower {
+			.flower-size(1.5*@flower-size);
+		}
+	}
+
+	@media all and (max-width: 1110px) {
+		.flower {
+			.flower-size(2*@flower-size);
+		}
+	}
+
+	@media all and (max-width: 960px) {
+		.flower {
+			.flower-size(3*@flower-size);
+		}
+	}
+
+
+}
+
+.flower-size(@flower-size) {
+	@margin-left-right: (100%-@flower-size)/2;
+	width: @flower-size;
+	margin: 2% @margin-left-right 0 @margin-left-right;
+	padding: @flower-size/2 0;
+}
+
+.flower-inner(){
+	.center {
+		position: absolute;
+		height: 0;
+		width: 30%;
+		margin: 35%;
+		top: 0;
+		border-radius: 50%;
+		background-color: saddlebrown;
+		text-align: center;
+		padding: 15% 0;
+		line-height: 0;
+		color: yellow;
+		z-index: 999;
+	}
+	.leaf {
+		width: 35%;
+		height: 0;
+		padding: 17.5% 0;
+		background-color: yellow;
+		border-top-left-radius: 100%;
+		border-bottom-right-radius: 100%;
+		transform-origin: 0% 100%;
+		position: absolute;
+		border: 1px solid #383;
+		&.nth1,
+		&.nth7 {
+			transform: rotateZ(-45deg);
+			left: 50%;
+		}
+		&.nth4,
+		&.nth10 {
+			transform: rotateZ(45deg);
+			top: 15%;
+		}
+		&.nth2,
+		&.nth8 {
+			transform: rotateZ(-15deg);
+		}
+		&.nth3,
+		&.nth9 {
+			transform: rotateZ(15deg);
+		}
+		&.nth5,
+		&.nth11 {
+			transform: rotateZ(-105deg);
+		}
+		&.nth6,
+		&.nth12 {
+			transform: rotateZ(105deg);
+		}
+		&.nth1 {
+			top: 5%;
+		}
+		&.nth7 {
+			bottom: -8%;
+		}
+		&.nth4 {
+			right: 5%;
+		}
+		&.nth10 {
+			left: -9%;
+		}
+		&.nth2 {
+			top: 7%;
+			right: 10%;
+		}
+		&.nth6 {
+			bottom: 41%;
+			right: 10%;
+		}
+		&.nth8 {
+			bottom: -2%;
+			left: 21%;
+		}
+		&.nth12 {
+			top: -37%;
+			left: 20%;
+		}
+		&.nth3 {
+			right: 6%;
+			top: 10%;
+		}
+		&.nth9 {
+			bottom: 20%;
+			left: -1%;
+
+			//			right: 6%;
+			//			top:10%;
+		}
+		&.nth5 {
+			right: -36%;
+			bottom: 20%;
+		}
+		&.nth11 {
+			top: 10%;
+			left: 42%;
+		}
+
+
+	}
+	.helper30 {
+		border: 1px solid black;
+		line-height: 0;
+		transform: rotateZ(30deg);
+		display: none;
+	}
+	.helper-30 {
+		border: 1px solid black;
+		line-height: 0;
+		transform: rotateZ(-30deg);
+		display: none;
+	}
+	.helper60 {
+		border: 1px solid black;
+		line-height: 0;
+		transform: rotateZ(60deg);
+		display: none;
+	}
+	.helper-60 {
+		border: 1px solid black;
+		line-height: 0;
+		transform: rotateZ(-60deg);
+		display: none;
+	}
+}
+.flower(25%);
+
+

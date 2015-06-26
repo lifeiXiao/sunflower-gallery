@@ -1,0 +1,10 @@
+mixin cloud(verticalAdjustment, horizontalAdjustment)
+    - var num = Math.floor( Math.random() * 3 ) ? 5 : 3, n = 0, classes = 'num-' + num;
+    - verticalAdjustment = verticalAdjustment || Math.floor(Math.random() * 20);
+    - horizontalAdjustment = horizontalAdjustment || Math.floor(Math.random() * 20);
+    - classes = classes + ' adj-vert-' + verticalAdjustment + ' adj-hor-' + horizontalAdjustment;
+    div(class= 'cloud ' + classes)
+        while n < num
+            - var adjustment = Math.floor(Math.random() * 4), classes = 'nth' + n + ' adjustment-' + adjustment
+            div(class = 'curve ' + classes) &nbsp;
+            - n++

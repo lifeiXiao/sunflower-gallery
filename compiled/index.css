@@ -1,0 +1,600 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+}
+@media all and (max-width: 550px) {
+  body {
+    font-size: 1.3em !important;
+  }
+}
+@media all and (max-width: 480px) {
+  body {
+    font-size: 1em !important;
+  }
+}
+@media all and (max-width: 360px) {
+  body {
+    font-size: 0.8em !important;
+  }
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  position: relative;
+  padding-top: 50px;
+}
+footer.ground {
+  background-color: #B27B34;
+  height: 100px;
+  width: 100%;
+}
+.cloud {
+  padding: 0;
+  padding-bottom: 10.5%;
+  margin-top: -5.25%;
+}
+.cloud.num-3 {
+  width: 10.5%;
+  margin-left: -5.25%;
+}
+.cloud.num-5 {
+  width: 14%;
+  margin-left: -7%;
+}
+@media all and (max-width: 1650px) {
+  .cloud {
+    padding: 0;
+    padding-bottom: 14.7%;
+    margin-top: -7.35%;
+  }
+  .cloud.num-3 {
+    width: 14.7%;
+    margin-left: -7.35%;
+  }
+  .cloud.num-5 {
+    width: 19.6%;
+    margin-left: -9.8%;
+  }
+}
+@media all and (max-width: 1110px) {
+  .cloud {
+    padding: 0;
+    padding-bottom: 18.9%;
+    margin-top: -9.45%;
+  }
+  .cloud.num-3 {
+    width: 18.9%;
+    margin-left: -9.45%;
+  }
+  .cloud.num-5 {
+    width: 25.2%;
+    margin-left: -12.6%;
+  }
+}
+@media all and (max-width: 960px) {
+  .cloud {
+    padding: 0;
+    padding-bottom: 28.35%;
+    margin-top: -14.175%;
+  }
+  .cloud.num-3 {
+    width: 28.35%;
+    margin-left: -14.175%;
+  }
+  .cloud.num-5 {
+    width: 37.8%;
+    margin-left: -18.9%;
+  }
+}
+.cloud {
+  z-index: -1;
+  position: absolute;
+  height: 0;
+  line-height: 0;
+}
+.cloud .nth0 {
+  left: 0;
+  bottom: 0;
+}
+.cloud.num-3 .nth1 {
+  left: 33.3333333333%;
+  bottom: 0;
+}
+.cloud.num-3 .nth2 {
+  left: 16.6666666665%;
+  bottom: 33.3333333333%;
+}
+.cloud.num-3 .curve.adjustment-0 {
+  padding-bottom: 67%;
+  width: 67%;
+}
+.cloud.num-3 .curve.adjustment-1 {
+  padding-bottom: 71%;
+  width: 71%;
+}
+.cloud.num-3 .curve.adjustment-2 {
+  padding-bottom: 75%;
+  width: 75%;
+}
+.cloud.num-3 .curve.adjustment-3 {
+  padding-bottom: 79%;
+  width: 79%;
+}
+.cloud.num-5 .nth1 {
+  left: 25%;
+  bottom: 0;
+}
+.cloud.num-5 .nth2 {
+  left: 50%;
+  bottom: 0;
+}
+.cloud.num-5 .nth3 {
+  left: 12.5%;
+  bottom: 33.3333333333%;
+}
+.cloud.num-5 .nth4 {
+  left: 37.5%;
+  bottom: 33.3333333333%;
+}
+.cloud.num-5 .curve.adjustment-0 {
+  padding-bottom: 50%;
+  width: 50%;
+}
+.cloud.num-5 .curve.adjustment-1 {
+  padding-bottom: 54%;
+  width: 54%;
+}
+.cloud.num-5 .curve.adjustment-2 {
+  padding-bottom: 58%;
+  width: 58%;
+}
+.cloud.num-5 .curve.adjustment-3 {
+  padding-bottom: 62%;
+  width: 62%;
+}
+.cloud .curve {
+  position: absolute;
+  height: 0;
+  background-color: white;
+  border-radius: 100%;
+}
+.cloud.adj-vert-1 {
+  top: 5%;
+}
+.cloud.adj-vert-2 {
+  top: 10%;
+}
+.cloud.adj-vert-3 {
+  top: 15%;
+}
+.cloud.adj-vert-4 {
+  top: 20%;
+}
+.cloud.adj-vert-5 {
+  top: 25%;
+}
+.cloud.adj-vert-6 {
+  top: 30%;
+}
+.cloud.adj-vert-7 {
+  top: 35%;
+}
+.cloud.adj-vert-8 {
+  top: 40%;
+}
+.cloud.adj-vert-9 {
+  top: 45%;
+}
+.cloud.adj-vert-10 {
+  top: 50%;
+}
+.cloud.adj-vert-11 {
+  top: 55%;
+}
+.cloud.adj-vert-12 {
+  top: 60%;
+}
+.cloud.adj-vert-13 {
+  top: 65%;
+}
+.cloud.adj-vert-14 {
+  top: 70%;
+}
+.cloud.adj-vert-15 {
+  top: 75%;
+}
+.cloud.adj-vert-16 {
+  top: 80%;
+}
+.cloud.adj-vert-17 {
+  top: 85%;
+}
+.cloud.adj-vert-18 {
+  top: 90%;
+}
+.cloud.adj-vert-19 {
+  top: 95%;
+}
+.cloud.adj-vert-20 {
+  top: 100%;
+}
+.cloud.adj-hor-0 {
+  left: 0;
+}
+.cloud.adj-hor-1 {
+  left: 5%;
+}
+.cloud.adj-hor-2 {
+  left: 10%;
+}
+.cloud.adj-hor-3 {
+  left: 15%;
+}
+.cloud.adj-hor-4 {
+  left: 20%;
+}
+.cloud.adj-hor-5 {
+  left: 25%;
+}
+.cloud.adj-hor-6 {
+  left: 30%;
+}
+.cloud.adj-hor-7 {
+  left: 35%;
+}
+.cloud.adj-hor-8 {
+  left: 40%;
+}
+.cloud.adj-hor-9 {
+  left: 45%;
+}
+.cloud.adj-hor-10 {
+  left: 50%;
+}
+.cloud.adj-hor-11 {
+  left: 55%;
+}
+.cloud.adj-hor-12 {
+  left: 60%;
+}
+.cloud.adj-hor-13 {
+  left: 65%;
+}
+.cloud.adj-hor-14 {
+  left: 70%;
+}
+.cloud.adj-hor-15 {
+  left: 75%;
+}
+.cloud.adj-hor-16 {
+  left: 80%;
+}
+.cloud.adj-hor-17 {
+  left: 85%;
+}
+.cloud.adj-hor-18 {
+  left: 90%;
+}
+.cloud.adj-hor-19 {
+  left: 95%;
+}
+.cloud.adj-hor-20 {
+  left: 100%;
+}
+body {
+  background-color: #68A1FF;
+  margin: 0;
+}
+section.sky {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.flower {
+  height: 0;
+  position: relative;
+  width: 25%;
+  margin: 2% 37.5% 0 37.5%;
+  padding: 12.5% 0;
+}
+.flower .center {
+  position: absolute;
+  height: 0;
+  width: 30%;
+  margin: 35%;
+  top: 0;
+  border-radius: 50%;
+  background-color: saddlebrown;
+  text-align: center;
+  padding: 15% 0;
+  line-height: 0;
+  color: yellow;
+  z-index: 999;
+}
+.flower .leaf {
+  width: 35%;
+  height: 0;
+  padding: 17.5% 0;
+  background-color: yellow;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  -webkit-transform-origin: 0% 100%;
+      -ms-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  position: absolute;
+  border: 1px solid #383;
+}
+.flower .leaf.nth1,
+.flower .leaf.nth7 {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  left: 50%;
+}
+.flower .leaf.nth4,
+.flower .leaf.nth10 {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  top: 15%;
+}
+.flower .leaf.nth2,
+.flower .leaf.nth8 {
+  -webkit-transform: rotateZ(-15deg);
+          transform: rotateZ(-15deg);
+}
+.flower .leaf.nth3,
+.flower .leaf.nth9 {
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+}
+.flower .leaf.nth5,
+.flower .leaf.nth11 {
+  -webkit-transform: rotateZ(-105deg);
+          transform: rotateZ(-105deg);
+}
+.flower .leaf.nth6,
+.flower .leaf.nth12 {
+  -webkit-transform: rotateZ(105deg);
+          transform: rotateZ(105deg);
+}
+.flower .leaf.nth1 {
+  top: 5%;
+}
+.flower .leaf.nth7 {
+  bottom: -8%;
+}
+.flower .leaf.nth4 {
+  right: 5%;
+}
+.flower .leaf.nth10 {
+  left: -9%;
+}
+.flower .leaf.nth2 {
+  top: 7%;
+  right: 10%;
+}
+.flower .leaf.nth6 {
+  bottom: 41%;
+  right: 10%;
+}
+.flower .leaf.nth8 {
+  bottom: -2%;
+  left: 21%;
+}
+.flower .leaf.nth12 {
+  top: -37%;
+  left: 20%;
+}
+.flower .leaf.nth3 {
+  right: 6%;
+  top: 10%;
+}
+.flower .leaf.nth9 {
+  bottom: 20%;
+  left: -1%;
+}
+.flower .leaf.nth5 {
+  right: -36%;
+  bottom: 20%;
+}
+.flower .leaf.nth11 {
+  top: 10%;
+  left: 42%;
+}
+.flower .helper30 {
+  border: 1px solid black;
+  line-height: 0;
+  -webkit-transform: rotateZ(30deg);
+          transform: rotateZ(30deg);
+  display: none;
+}
+.flower .helper-30 {
+  border: 1px solid black;
+  line-height: 0;
+  -webkit-transform: rotateZ(-30deg);
+          transform: rotateZ(-30deg);
+  display: none;
+}
+.flower .helper60 {
+  border: 1px solid black;
+  line-height: 0;
+  -webkit-transform: rotateZ(60deg);
+          transform: rotateZ(60deg);
+  display: none;
+}
+.flower .helper-60 {
+  border: 1px solid black;
+  line-height: 0;
+  -webkit-transform: rotateZ(-60deg);
+          transform: rotateZ(-60deg);
+  display: none;
+}
+@media all and (max-width: 1650px) {
+  .flower {
+    width: 37.5%;
+    margin: 2% 31.25% 0 31.25%;
+    padding: 18.75% 0;
+  }
+}
+@media all and (max-width: 1110px) {
+  .flower {
+    width: 50%;
+    margin: 2% 25% 0 25%;
+    padding: 25% 0;
+  }
+}
+@media all and (max-width: 960px) {
+  .flower {
+    width: 75%;
+    margin: 2% 12.5% 0 12.5%;
+    padding: 37.5% 0;
+  }
+}
+.slice {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.slice > .left,
+.slice > .right {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.slice > .left > .leaf {
+  float: right;
+  margin-right: 5px;
+}
+.slice > .right > .leaf {
+  float: left;
+  margin-left: 5px;
+}
+.slice .leaf {
+  height: 0;
+  line-height: 0;
+  background-color: #383;
+  text-align: center;
+  position: relative;
+  width: 25%;
+  padding: 12.5% 0;
+}
+.slice .leaf a {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 50% 0;
+}
+.slice .leaf a:active,
+.slice .leaf a:focus {
+  outline: none;
+}
+@media all and (max-width: 1650px) {
+  .slice .leaf {
+    width: 37.5%;
+    padding: 18.75% 0;
+  }
+}
+@media all and (max-width: 1110px) {
+  .slice .leaf {
+    width: 50%;
+    padding: 25% 0;
+  }
+}
+@media all and (max-width: 960px) {
+  .slice .leaf {
+    width: 75%;
+    padding: 37.5% 0;
+  }
+}
+.slice:nth-of-type(even) .leaf {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 16.66666666666666%;
+  border-bottom-left-radius: 100%;
+  -webkit-transition: -webkit-transform 2s, background-color 2s, font-size 2s;
+          transition: transform 2s, background-color 2s, font-size 2s;
+  -webkit-transform: rotateZ(0);
+          transform: rotateZ(0);
+  -webkit-transform-origin: 100% 80%;
+      -ms-transform-origin: 100% 80%;
+          transform-origin: 100% 80%;
+  font-size: 1.1em;
+}
+.slice:nth-of-type(even) .leaf:hover {
+  -webkit-transform: rotateZ(-10deg);
+          transform: rotateZ(-10deg);
+  -webkit-transform-origin: 100% 80%;
+      -ms-transform-origin: 100% 80%;
+          transform-origin: 100% 80%;
+  -webkit-transition: -webkit-transform 2s, background-color 2s, font-size 2s;
+          transition: transform 2s, background-color 2s, font-size 2s;
+  background-color: green;
+  font-size: 1.5em;
+}
+.slice:nth-of-type(odd) .leaf {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 16.66666666666666%;
+  border-bottom-right-radius: 100%;
+  -webkit-transition: -webkit-transform 2s, background-color 2s, font-size 2s;
+          transition: transform 2s, background-color 2s, font-size 2s;
+  -webkit-transform: rotateZ(0);
+          transform: rotateZ(0);
+  -webkit-transform-origin: 0% 80%;
+      -ms-transform-origin: 0% 80%;
+          transform-origin: 0% 80%;
+  font-size: 1.1em;
+}
+.slice:nth-of-type(odd) .leaf:hover {
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
+  -webkit-transform-origin: 0% 80%;
+      -ms-transform-origin: 0% 80%;
+          transform-origin: 0% 80%;
+  -webkit-transition: -webkit-transform 2s, background-color 2s, font-size 2s;
+          transition: transform 2s, background-color 2s, font-size 2s;
+  background-color: green;
+  font-size: 1.5em;
+}
+.slice.without {
+  height: 100px;
+}
+.slice .line {
+  width: 20%;
+  background-color: #383;
+  height: 100%;
+  margin: 0 auto;
+  border: 2px solid #9a9;
+}
+.plant {
+  position: relative;
+}
+.stem {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 20px;
+  background-color: #383;
+  height: 100%;
+  z-index: -1;
+}
