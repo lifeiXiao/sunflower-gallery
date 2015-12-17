@@ -76,6 +76,10 @@ environment.current = environment.prod;
         helpers.applyFileWatcher('jade');
     });
 
+    gulp.task('watchJs', function() {
+        helpers.applyFileWatcher('js');
+    });
+
 
     /**
      * Helper function, gets the filename and extension from a path string.
